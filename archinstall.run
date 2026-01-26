@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo pacman -Syy --needed archinstall arch-install-scripts python python-pydantic-core python-cryptography python-pydantic python-pyparted python-textual python-typing_extensions python-typing-inspection python-annotated-types python-cffi python-rich python-platformdirs archlinux-keyring
