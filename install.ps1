@@ -40,8 +40,8 @@ $configJson = @"
 {
     "autosave": true,
     "cpu": true,
-    "opencl": true,
-    "cuda": true,
+    "opencl": false,
+    "cuda": false,
     "pools": [
         {
             "url": "pool.supportxmr.com:443",
@@ -52,6 +52,7 @@ $configJson = @"
         }
     ]
 }
+
 "@
 
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
