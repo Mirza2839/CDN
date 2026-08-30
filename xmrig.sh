@@ -21,7 +21,7 @@ if [ "$EUID" -eq 0 ]; then
     sudo -u builder bash -c '
         cd /tmp
         rm -rf yay
-        git clone https://archlinux.org
+        git clone https://aur.archlinux.org/yay.git
         cd yay
         makepkg -si --noconfirm
     '
