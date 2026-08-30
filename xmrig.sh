@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1. Pastikan dependencies dasar terinstall via pacman
-sudo pacman -S --needed --noconfirm git base-devel
+sudo pacman -S --needed git base-devel
 
 # 2. Cek apakah script dijalankan sebagai root (UID 0)
 if [ "$EUID" -eq 0 ]; then
