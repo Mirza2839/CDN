@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update && sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y && \
-cd ~ && git clone https://github.com && cd xmrig && \
+cd ~ && git clone https://github.com/xmrig/xmrig.git && cd xmrig && \
 sed -i 's/constexpr const int kDefaultDonateLevel = 1;/constexpr const int kDefaultDonateLevel = 0;/g' src/donate.h && \
 sed -i 's/constexpr const int kMinimumDonateLevel = 1;/constexpr const int kMinimumDonateLevel = 0;/g' src/donate.h && \
 mkdir build && cd build && cmake .. && make -j$(nproc) && \
